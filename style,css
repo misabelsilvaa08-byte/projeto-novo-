@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial; /*Define a fonte dp texto*/
+    background: #f0f2f5;/*Cor de fundo Cinza claro*/
+    margin: 0;/*Remove as margens padrão do navegados*/
+}
+/* Container estilo celular*/
+.container {
+       max-width: 400px;/*limitar a largura*/
+       margin: auto;/*Centralizar*/
+}
+
+/* TOPO:Estiliza o cabeçalho azul no topo*/
+.topo{
+    background: #8a05be;
+    color: white;
+    padding: 20px;/*Espaçamento interno para não grudar nas bordas*/
+    
+
+    /*Bordar arrendondas estilo app*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.saldo {
+    background: #8a05be;
+    color: white;
+
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+
+    /* flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.acoes{
+    /*Flexbox*/
+    display: flex;
+    gap: 10px;/*Espaço entre Botões*/
+    margin-bottom: 20px;
+
+}
+
+button {
+     flex: 1; /* divide espaço iguralmente*/
+
+     padding: 15px;
+     background: #f0f2f5;
+     color: #8a05be;
+
+     border: none;
+     border-radius: 10px;
+
+     font-weight: bold;
+     cursor: pointer;
+}
+
+button {
+    display: block;/*faz o botão ocupar a linha toda*/
+     width: 100%;/*Garante que o botão utilize toda a largura disponivel*/
+     margin: 10px;/*fica um espaço de 10px entre os botoes*/
+     padding: 12px;/*altura interna do botão"Toque mais facil*/
+     background: #2563eb;/*Cor azul vibrante*/
+     color: white;
+     border: none;/*Remove a borda padrao do sistema*/
+     border-radius: 5px;/*Cantos levemente arredondados*/
+     cursor: pointer;/* Muda o mouse para a mãozinha ao passar por cima*/
+}
+.transacoes {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.transacoes{
+    margin-bottom: 10px;/*espaço abaixo do titulo*/
+}
+
+.item {
+    background: #f0f2f5;/*fundo branco*/
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;/*flexbox*/
+    justify-content: space-between;
+}
+
+.card {
+    background: #f0f2f5;
+    margin: 20px;
+    padding: 20px; 
+    border-radius: 10px; 
+} 
+/*bloco de dica*/
+.destaque{ background-color: #f0f2f5;
+border: 1px solid #e5b8ff;}
+/*resposividade para celular*/
+@media( max-width: 600px) {/*define que as regras serao aplicadas em ecrãs com larguras maxima 600px que e compativel para celulares*/
+
+.container { /* selecionar elemento container*/
+    max-width: 100% /* ocupa toda a largura da tela*/
+}
+.acoes{
+flex-direction:column; /*empilha os botoes dos celulares*/
+}
+.saldo{
+flex-direction: column;/*empilha os saldos e valores*/
+align-items:flex-start;/* alinha á esquerda*/
+gap: 8px;/*espaço entre linhas*/
+}
+
+}
+
+
+
+
+
+
+
